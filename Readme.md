@@ -10,15 +10,27 @@ tesstrain
 python
 ```
 
+## Training images set
 ```
-training images set
 images : ground_truth/.png
 correct_text : ground_truth/.txt
 ```
+> Image files should be png type.
 
-checking images set
+## checking images set
 
-## Model Learning from training images set
+> Do not reuse images from the training set.
+
+> It needs to use different images from the training set.
+
+## Sample ground truth image, text
+Sample image : 36-0001.png
+
+![](./Sample/36-0001.png)
+
+Sample text : 36-0001.gt.txt
+
+36
 
 ## Tesstrain
 
@@ -54,7 +66,6 @@ https://github.com/tesseract-ocr/tesstrain
 └── tree.txt
 ```
 
-
 ## Model making
 
 make training MODEL_NAME=my-model START_MODEL=eng TESSDATA=./bestdata
@@ -88,7 +99,7 @@ copy your traineddata to tesseract tessdata
 
 ## Test
 
-tesseract 00-0013.png --psm 8 -l my-model
+tesseract 36-1003.png --psm 8 -l my-model
 
 ## References
 

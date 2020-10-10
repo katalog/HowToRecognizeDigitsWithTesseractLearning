@@ -5,7 +5,7 @@
 ```
 tesseract >= 4.0
 
-tesstrain
+tesstrain : https://github.com/tesseract-ocr/tesstrain
 
 python
 ```
@@ -32,12 +32,8 @@ Sample text : 36-0001.gt.txt
 
 36
 
-## Tesstrain
-
-https://github.com/tesseract-ocr/tesstrain
-
 ## Files prep
-
+> bestdata folder and python files are that getting from the tesstrain project.
 ```
 .
 ├── bestdata

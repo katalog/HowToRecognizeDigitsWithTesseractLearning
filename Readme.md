@@ -5,7 +5,7 @@
 ```
 tesseract >= 4.0
 
-[tesstrain](https://github.com/tesseract-ocr/tesstrain) : https://github.com/tesseract-ocr/tesstrain
+![tesstrain](https://github.com/tesseract-ocr/tesstrain) : https://github.com/tesseract-ocr/tesstrain
 
 python
 ```

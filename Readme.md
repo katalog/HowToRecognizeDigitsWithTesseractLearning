@@ -1,4 +1,4 @@
-# How to recognize digits from images with tesseract + ML.
+# How to recognize random transformed digits from images with tesseract + ML.
 
 ## Requirements
 
@@ -21,14 +21,19 @@ correct_text : ground_truth/.txt
 
 > It needs to use different images from the training set.
 
-## Sample ground truth image, text
+## Sample ground truth image
 Sample image : 36-0001.png
 
 ![](36-0001.png)
 
-Sample text : 36-0001.gt.txt
+Sample image : 36-0002.png
 
-36
+![](36-0002.png)
+
+Sample image : 36-0003.png
+
+![](36-0003.png)
+
 
 ## Files prep
 > bestdata folder and python files are that getting from the tesstrain project.
@@ -60,7 +65,7 @@ Sample text : 36-0001.gt.txt
 └── tree.txt
 ```
 
-## Model making
+## Training the model
 
 make training MODEL_NAME=my-model START_MODEL=eng TESSDATA=./bestdata
 
@@ -88,7 +93,7 @@ sys	0m31,379s
 
 copy your traineddata to tesseract tessdata
 ```
-/usr/share/tesseract-ocr/4.00/tessdata/
+cp ./data/my-model.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
 ```
 
 ## Test

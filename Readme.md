@@ -24,7 +24,7 @@ correct_text : ground_truth/.txt
 ## Sample ground truth image, text
 Sample image : 36-0001.png
 
-![](./Sample/36-0001.png)
+![](36-0001.png)
 
 Sample text : 36-0001.gt.txt
 

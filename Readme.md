@@ -8,14 +8,14 @@ tesstrain : https://github.com/tesseract-ocr/tesstrain
 
 python
 
-## Training images set
+## Training image set
 ```
 images : ground_truth/.png
 correct_text : ground_truth/.txt
 ```
 > Image files should be png type.
 
-## checking images set
+## checking image set
 
 > Do not reuse images from the training set.
 
